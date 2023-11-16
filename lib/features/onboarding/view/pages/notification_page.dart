@@ -63,7 +63,7 @@ class NotificationPage extends StatelessWidget {
                     bottom: 32.0,
                   ),
                   child: CustomButton(
-                    onTap: () {},
+                    onTap: () => navigatorPush(),
                     child: Text(
                       'Enable notifications',
                       style: theme.textTheme.titleMedium?.copyWith(
