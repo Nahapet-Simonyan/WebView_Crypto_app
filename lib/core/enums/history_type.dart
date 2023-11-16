@@ -1,0 +1,1 @@
+enum HistoryType { current, finished }

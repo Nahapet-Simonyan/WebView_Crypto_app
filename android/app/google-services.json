@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "557489775699",
+    "project_id": "brakek-crypto",
+    "storage_bucket": "brakek-crypto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557489775699:android:42c6a51c9b48e7845f92a6",
+        "android_client_info": {
+          "package_name": "com.example.web_view_cripto_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Zcc4HXvoitre3joloxmh0qD8vYD2OZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557489775699:android:2c878695a15a95435f92a6",
+        "android_client_info": {
+          "package_name": "com.sou.bin7r4decl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Zcc4HXvoitre3joloxmh0qD8vYD2OZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
