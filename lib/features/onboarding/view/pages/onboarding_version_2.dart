@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:page_view_dot_indicator/page_view_dot_indicator.dart';
 import 'package:bin7r4decl/components/custom_button.dart';
 import 'package:bin7r4decl/core/constants/colors.dart';
-import 'package:bin7r4decl/features/app_menu/view/menu_screen.dart';
+import 'package:bin7r4decl/features/app_menu/view/pages/menu_screen.dart';
 import 'package:bin7r4decl/features/onboarding/view/pages/telegram_page.dart';
 
 import '../widget/onboarding_widget.dart';

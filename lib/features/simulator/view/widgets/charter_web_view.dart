@@ -1,11 +1,13 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:bin7r4decl/core/constants/colors.dart';
-import 'package:bin7r4decl/features/simulator/view/widgets/custom_dropdoun_menu.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter/material.dart';
 
-import '../../data/models/currency_item.dart';
-import '../bloc/simulator_cubit/simulator_cubit.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+
+import 'package:bin7r4decl/core/constants/colors.dart';
+import 'package:bin7r4decl/features/simulator/data/data.dart';
+import 'package:bin7r4decl/features/simulator/view/cubits/cubits.dart';
+import 'package:bin7r4decl/features/simulator/view/widgets/widgets.dart';
+
 
 class CharterWebViewWidget extends StatelessWidget {
   final WebViewController controller;

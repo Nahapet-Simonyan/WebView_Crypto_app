@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:bin7r4decl/core/constants/colors.dart';
-import 'package:bin7r4decl/repositories/models/bet_model/bet_model.dart';
+import 'package:bin7r4decl/features/simulator/simulator.dart';
 
 class HistoryBox extends StatelessWidget {
   const HistoryBox({super.key, required this.theme, required this.bet});

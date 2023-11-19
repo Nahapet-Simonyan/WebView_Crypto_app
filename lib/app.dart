@@ -1,11 +1,13 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'components/app_dialog.dart';
-import 'config/data/data_bloc/base_data_bloc.dart';
-import 'config/data/data_bloc/base_data_state.dart';
-import 'features/app_menu/app_menu.dart';
-import 'features/onboarding/view/view.dart';
+import 'package:bin7r4decl/components/components.dart';
+import 'package:bin7r4decl/core/base_data/base_data.dart';
+import 'package:bin7r4decl/features/app_menu/app_menu.dart';
+import 'package:bin7r4decl/features/onboarding/onboarding.dart';
+
+import 'features/app_menu/view/cubit/app_menu_state.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -30,8 +32,13 @@ class App extends StatelessWidget {
         body: BlocBuilder<BaseDataBloc, BaseDataState>(
           builder: (context, state) {
             if(state is BaseDataDone && state.num == '1'){
-              print(state.num);
+              if (kDebugMode) {
+                print(state.num);
+              }
               return const OnboardingVersion1();
+            }
+            if (kDebugMode) {
+              print(state.error);
             }
             return const OnboardingVersion2();
           },

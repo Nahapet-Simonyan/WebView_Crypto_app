@@ -2,11 +2,11 @@ import 'dart:math';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:bin7r4decl/features/history/view/ui_cubit/history_cubit.dart';
-import 'package:bin7r4decl/features/progress/view/cubit/progress_cubit.dart';
-import 'package:bin7r4decl/features/simulator/view/bloc/betting_cubit/betting_cubit.dart';
-import 'package:bin7r4decl/repositories/betting_repository.dart';
-import 'package:bin7r4decl/repositories/models/bet_model/bet_model.dart';
+
+import 'package:bin7r4decl/features/history/history.dart';
+import 'package:bin7r4decl/features/progress/progress.dart';
+import 'package:bin7r4decl/features/simulator/simulator.dart';
+
 import 'app_menu_state.dart';
 
 class AppMenuCubit extends Cubit<AppMenuState> {

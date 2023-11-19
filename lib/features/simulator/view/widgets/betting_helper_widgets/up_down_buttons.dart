@@ -1,10 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
 import 'package:bin7r4decl/components/custom_button.dart';
 import 'package:bin7r4decl/core/constants/colors.dart';
 import 'package:bin7r4decl/core/enums/betting_status.dart';
+import 'package:bin7r4decl/features/simulator/view/cubits/cubits.dart';
 
-import '../../bloc/betting_cubit/betting_cubit.dart';
 import 'status_dialog.dart';
 
 class UpDownButtons extends StatelessWidget {

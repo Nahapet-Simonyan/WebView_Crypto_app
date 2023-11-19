@@ -2,7 +2,7 @@ import 'package:intl/intl.dart';
 
 String getDateDifference(DateTime dateTime) {
   DateTime now = DateTime.now();
-  Duration difference = dateTime.difference(now);
+  Duration difference = now.difference(dateTime);
 
   if (difference.inMinutes < 60) {
     return '${difference.inMinutes} minute${difference.inMinutes == 1 ? '' : 's'} ago';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:bin7r4decl/core/constants/colors.dart';
-import '../bloc/betting_cubit/betting_cubit.dart';
-import 'betting_helper_widgets/timer_amount_row.dart';
-import 'betting_helper_widgets/up_down_buttons.dart';
-import 'betting_helper_widgets/releted_bar.dart';
+import 'package:bin7r4decl/features/simulator/view/cubits/cubits.dart';
+import 'package:bin7r4decl/features/simulator/view/widgets/widgets.dart';
 
 class BettingWidget extends StatelessWidget {
   final String? currency;

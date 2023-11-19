@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:bin7r4decl/repositories/betting_repository.dart';
-import 'package:bin7r4decl/repositories/models/bet_model/bet_model.dart';
+
+import 'package:bin7r4decl/features/simulator/data/data.dart';
 
 part 'progress_state.dart';
 

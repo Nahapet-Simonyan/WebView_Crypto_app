@@ -1,8 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+
 import 'package:bin7r4decl/core/enums/history_type.dart';
-import 'package:bin7r4decl/repositories/betting_repository.dart';
-import 'package:bin7r4decl/repositories/models/bet_model/bet_model.dart';
+import 'package:bin7r4decl/features/simulator/data/data.dart';
+
 import 'history_state.dart';
 
 class HistoryCubit extends Cubit<HistoryState> {

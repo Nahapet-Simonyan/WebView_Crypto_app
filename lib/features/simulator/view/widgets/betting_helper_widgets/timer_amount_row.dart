@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../bloc/betting_cubit/betting_cubit.dart';
-import '../custom_dropdoun_menu.dart';
+import 'package:bin7r4decl/features/simulator/view/cubits/cubits.dart';
+import 'package:bin7r4decl/features/simulator/view/widgets/widgets.dart';
+
 
 class TimerAndAmountRow extends StatelessWidget {
   const TimerAndAmountRow(

@@ -1,6 +1,8 @@
 import 'package:equatable/equatable.dart';
+
 import 'package:bin7r4decl/core/enums/history_type.dart';
-import 'package:bin7r4decl/repositories/models/bet_model/bet_model.dart';
+import 'package:bin7r4decl/features/simulator/simulator.dart';
+
 
 class HistoryState extends Equatable {
   final HistoryType type;

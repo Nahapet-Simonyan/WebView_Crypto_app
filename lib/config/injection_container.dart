@@ -1,16 +1,15 @@
 import 'dart:typed_data';
 
-import 'package:dio/dio.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import '../features/app_menu/view/cubit/app_menu_cubit.dart';
-import '../features/news/data/data_sources/news_api.dart';
-import '../features/simulator/view/bloc/betting_cubit/betting_cubit.dart';
-import '../repositories/betting_repository.dart';
-import '../repositories/models/bet_model/bet_model.dart';
-import 'data/data.dart';
+import 'package:bin7r4decl/core/base_data/base_data.dart';
+import 'package:bin7r4decl/features/app_menu/app_menu.dart';
+import 'package:bin7r4decl/features/news/news.dart';
+import 'package:bin7r4decl/features/simulator/simulator.dart';
+
 
 Future<void> initializeDependencies() async {
   ///Firebase
@@ -22,12 +21,6 @@ Future<void> initializeDependencies() async {
   try {
     await remoteConfig.fetchAndActivate();
   } on Exception catch (e) {}
-
-  /// AppHud
-  // await Apphud.start(apiKey: "app_RJArBb8RFjjoBKykuKnVbRuHWpiwAm");
-
-  /// Amplitude
-  // await initAmplitude();
 
   ///Hive
   const betsBoxName = 'betsList';
@@ -53,7 +46,7 @@ Future<void> initializeDependencies() async {
   double? point = pointBox.get(pointName);
   if (point == null) pointBox.put(pointName, 0.0);
   Uint8List? image = profileBox.get('image');
-  if(image == null) profileBox.put('image', Uint8List(0));
+  if (image == null) profileBox.put('image', Uint8List(0));
 
   ///GetIt
   GetIt.I.registerSingleton<Dio>(Dio());

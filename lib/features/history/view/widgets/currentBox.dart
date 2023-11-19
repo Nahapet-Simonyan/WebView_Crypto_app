@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:intl/intl.dart';
 import 'package:bin7r4decl/core/constants/colors.dart';
-import 'package:bin7r4decl/repositories/betting_repository.dart';
-import 'package:bin7r4decl/repositories/models/bet_model/bet_model.dart';
+import 'package:bin7r4decl/features/simulator/data/data.dart';
+
 
 class CurrentBox extends StatelessWidget {
   const CurrentBox({super.key, required this.theme, required this.bet});
